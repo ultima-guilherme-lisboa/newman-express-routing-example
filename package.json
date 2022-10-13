@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx newman run Docker-Example.postman_collection.json -r htmlextra"
+    
+    "test": "npx newman run Docker-Example.postman_collection.json -r htmlextra -e ${ENVIRONMENT}.postman_environment.json"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/ultima-guilherme-lisboa/newman-express-routing-example/issues"
   },
-  "homepage": "https://github.com/ultima-guilherme-lisboa/newman-express-routing-example#readme"
+  "homepage": "https://github.com/ultima-guilherme-lisboa/newman-express-routing-example#readme",
+  "dependencies": {
+    "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.11"
+  }
 }

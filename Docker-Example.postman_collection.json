@@ -2,12 +2,12 @@
 	"info": {
 		"_postman_id": "d397bf43-3919-46b3-9b93-1bd578ef01b3",
 		"name": "Docker-Example",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "2178209"
 	},
 	"item": [
 		{
-			"name": "http://localhost:3000/",
+			"name": "Como FrontEnd devo conseguir me comunicar com a API do Backendclear",
 			"event": [
 				{
 					"listen": "test",
@@ -27,17 +27,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						""
-					]
-				}
+				"url": "http://{{host-api}}:{{port}}/"
 			},
 			"response": []
 		}
