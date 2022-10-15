@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  api-services:
+    image: guillisboa/express-routing
+    ports: 
+      - 3000:75
+
+  api-tests:
+    image: guillisboa/newman-express-routing
+    links:
+    - api-services

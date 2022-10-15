@@ -8,4 +8,4 @@ RUN npm install -f
 
 COPY . .
 
-RUN sh
+ENV ENVIRONMENT=docker
